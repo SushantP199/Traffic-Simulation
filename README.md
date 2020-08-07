@@ -6,6 +6,7 @@ This Application is simply shows a basic unit of real time traffic system. It in
 3) Turn on green light - Press small key g
 4) To stop simulation - Press small key s
 
+(Above 4 hardware key interpretation is contributed by https://github.com/prab-sur)
 
 The following visual output will easily help to know about Traffic Simulation : 
 (And detailed video output is included in repository)
