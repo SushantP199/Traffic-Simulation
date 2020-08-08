@@ -9,6 +9,7 @@ This Application is simply shows a basic unit of real time traffic system. It in
 (Above 4 hardware key interpretation is contributed by https://github.com/prab-sur)
 
 The following visual output will easily help to know about Traffic Simulation : 
+
 (And detailed video output is included in repository)
 
 ![OP](https://user-images.githubusercontent.com/54701889/89565991-fe0b1d00-d83c-11ea-8b75-716e679819e9.png)
