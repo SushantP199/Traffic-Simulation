@@ -6,9 +6,8 @@ void main()
 	int gd=DETECT,gm,i,x,y,ch;
 	initgraph(&gd,&gm,"C://TURBOC3//BGI");
 	cleardevice();
-	for(i=0;i<=420;i+=20)
-	{
-            //trafficpole
+	void createTrafficPole(){
+	    //trafficpole
             line(10,20,10,415);
             rectangle(10,20,40,110);
             setcolor(4);
@@ -18,10 +17,9 @@ void main()
             setcolor(10);
             circle(25,95,10);
             setcolor(15);
-            //track
-            line(0,415,420,415);
-
-            //wheels
+	}
+	void createCar(){
+	     //wheels
             circle(400-i,400,15);
             circle(400-i,400,7);
             floodfill(400-i,400,15);
@@ -91,7 +89,10 @@ void main()
             floodfill(300-i,370,10);
 
             setcolor(15);
-            while(kbhit() && ch!=127)
+	}
+	
+	void changeSpeed(){
+	    while(kbhit() && ch!=127)
             {
                     ch=getch();
                     if(ch==114)
@@ -131,6 +132,17 @@ void main()
             setfillstyle(1,15);
             setcolor(15);
 	}
+	}
+	for(i=0;i<=420;i+=20)
+	{
+            createTrafficPole();
+            
+	    //track
+            line(0,415,420,415);
+
+             createCar();
+	     changeSpeed();
+	}  
 	getch();
 	closegraph();
 }
