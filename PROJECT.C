@@ -3,10 +3,10 @@
 #include<graphics.h>
 void main()
 {
-	int gd=DETECT,gm,i,x,y,ch;
+	int gd=DETECT,gm,i=0,x,y,ch;
 	initgraph(&gd,&gm,"C://TURBOC3//BGI");
 	cleardevice();
-	for(i=0;i<=420;i+=20)
+	while((i+=20)<=420)) //converted for loop into simple while loop
 	{
             //trafficpole
             line(10,20,10,415);
@@ -109,7 +109,7 @@ void main()
                                     floodfill(25,65,14);
                                     delay(250);
                                     if(i==420)
-                                            i=0;
+                                        i=0;
                                     setcolor(15);
                     }
                     if(ch==103)
@@ -118,15 +118,15 @@ void main()
                                     floodfill(25,95,10);
                                     delay(50);
                                     if(i==420)
-                                            i=0;
+                                       i=0;
                     }
             }
             if(i==420)
-                    i=0;
+               i=0;
             if(ch==121)
-                    delay(250);
+               delay(250);
             else
-                    delay(40);
+               delay(40);
             cleardevice();
             setfillstyle(1,15);
             setcolor(15);
